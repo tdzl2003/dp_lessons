@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>动态规划精讲 —— 解题十分钟</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./runtime.js"></script>
+    <script src="./assets/common.js"></script>
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <noscript>
+      您的浏览器需要支持且启用JavaScript功能才能正常观看本课程。
+    </noscript>
+    <div class="article">
+      <p>
+        课程简介：传说中的动态规划到底是什么算法？动态规划解决问题的基本流程是什么？为什么动态规划比搜索快那么多？动态规划和递推的区别是什么？
+      </p>
+      <div class="choice-title">
+        <span class="tag">[选择]</span>请选择适合您的学习方式：
+        <span class="hint">(不同学习方式内容一致，请按照喜好进行选择)</span>
+      </div>
+      <p id="alert-choose-type" class="error-hint" style="display: none">
+        请先选择课程类型：
+      </p>
+      <div class="choice-container choice-container-xs" id="choice-type">
+        <button class="choice" data-type="read">精简阅读</button>
+        <button class="choice" data-type="iread">交互阅读</button>
+        <button class="choice" data-type="video">视频演示</button>
+        <button class="choice" data-type="ivideo">交互视频</button>
+      </div>
+      <p class="hint">每节课约十分钟学习时间</p>
+      <ul class="menu" data-lesson-type="read">
+        <li><a href="/lesson1/read.html">第一课：从递推开始说起</a></li>
+        <li>
+          第二课：动态规划与最优化决策<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第三课：最小编辑距离与最长不降子序列<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第四课：0-1背包和最优化问题<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第五课：解题技巧：确定状态参数和转移方程<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第六课：解题技巧：寻找最佳时间复杂度<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第七课：难题精讲<span class="tag tag-warn">[不包含在本演示中]</span>
+        </li>
+      </ul>
+      <ul class="menu" data-lesson-type="iread">
+        <li><a href="/lesson1/iread.html">第一课：从递推开始说起</a></li>
+        <li>
+          第二课：动态规划与最优化决策<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第三课：最小编辑距离与最长不降子序列<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第四课：0-1背包和最优化问题<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第五课：解题技巧：确定状态参数和转移方程<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第六课：解题技巧：寻找最佳时间复杂度<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第七课：难题精讲<span class="tag tag-warn">[不包含在本演示中]</span>
+        </li>
+      </ul>
+      <ul class="menu" data-lesson-type="video">
+        <li><a href="/lesson1/video.html">第一课：从递推开始说起</a></li>
+        <li>
+          第二课：动态规划与最优化决策<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第三课：最小编辑距离与最长不降子序列<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第四课：0-1背包和最优化问题<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第五课：解题技巧：确定状态参数和转移方程<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第六课：解题技巧：寻找最佳时间复杂度<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第七课：难题精讲<span class="tag tag-warn">[不包含在本演示中]</span>
+        </li>
+      </ul>
+      <ul class="menu" data-lesson-type="ivideo">
+        <li><a href="/lesson1/ivideo.html">第一课：从递推开始说起</a></li>
+        <li>
+          第二课：动态规划与最优化决策<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第三课：最小编辑距离与最长不降子序列<span class="tag tag-warn"
+            >[即将推出……]</span
+          >
+        </li>
+        <li>
+          第四课：0-1背包和最优化问题<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第五课：解题技巧：确定状态参数和转移方程<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第六课：解题技巧：寻找最佳时间复杂度<span class="tag tag-warn"
+            >[不包含在本演示中]</span
+          >
+        </li>
+        <li>
+          第七课：难题精讲<span class="tag tag-warn">[不包含在本演示中]</span>
+        </li>
+      </ul>
+
+      <p>
+        学习更多课程，加入QQ讨论群：<a
+          href="https://jq.qq.com/?_wv=1027&k=wSk9WktK"
+          target="_blank"
+          rel="noopener noreferer"
+          >1129416004</a
+        >
+      </p>
+
+      <p class="hint">
+        本试读课程旨在对比不同的展现和交互方式对于快速学习、独立思考能力的促进作用，因此迫切希望得到您的直接反馈。可<a
+          href="https://jq.qq.com/?_wv=1027&k=wSk9WktK"
+          target="_blank"
+          rel="noopener noreferer"
+          >加入QQ群</a
+        >与老师直接交流。
+      </p>
+    </div>
+  </body>
+</html>
